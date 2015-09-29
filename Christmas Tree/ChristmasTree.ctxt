@@ -3,4 +3,6 @@ comment0.params=args
 comment0.target=void\ main(java.lang.String[])
 comment1.params=numSegments\ segHeight
 comment1.target=void\ drawTree(int,\ int)
-numComments=2
+comment2.params=numSpaces
+comment2.target=void\ drawSpaces(int)
+numComments=3
