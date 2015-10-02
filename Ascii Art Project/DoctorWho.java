@@ -13,17 +13,11 @@ public class DoctorWho
     public static void drawTardis(int windowHeight, int windowRowsAfterFirst){
         //it's windowrowsafterfirst because first is different/necessary
         drawSpaces(9);
-        System.out.print("-");
-        drawSpaces(9);
-        System.out.println();
+        System.out.println("-");
         drawSpaces(8);
-        System.out.print("---");
+        System.out.println("---");
         drawSpaces(8);
-        System.out.println();
-        drawSpaces(8);
-        System.out.print("| |");
-        drawSpaces(8);
-        System.out.println();
+        System.out.println("| |");
         drawSingleLineAcross();
         System.out.println("||  POLICE  BOX  ||");
         drawSingleLineAcross();
