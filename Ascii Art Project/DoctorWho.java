@@ -60,11 +60,9 @@ public class DoctorWho
     }
     public static void drawWindowBottom(){
         for (int i=1; i<=2; i++){
-            System.out.print(" | ");
-            System.out.print("-----");
+            System.out.print(" | -----");
         }
-        System.out.print(" |");
-        System.out.println();
+        System.out.println(" |");
     }
     public static void drawWindowMiddle(){
         for (int i=1; i<=2; i++){
