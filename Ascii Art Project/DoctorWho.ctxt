@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=args
+comment0.target=void\ main(java.lang.String[])
+comment1.params=windowHeight\ windowRowsAfterFirst
+comment1.target=void\ drawTardis(int,\ int)
+comment2.params=numSpaces
+comment2.target=void\ drawSpaces(int)
+comment3.params=
+comment3.target=void\ drawSingleLineAcross()
+comment4.params=
+comment4.target=void\ drawWindowTop()
+comment5.params=
+comment5.target=void\ drawWindowBottom()
+comment6.params=
+comment6.target=void\ drawWindowMiddle()
+numComments=7
