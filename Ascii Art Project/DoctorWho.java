@@ -1,6 +1,5 @@
-
 /**
- * Ascii Art Project - Draws Dalek & Tardis
+ * Ascii Art Project - Draws Tardis; number of segments and segment height can be changed
  * 
  * @author Alexis Scheerer
  * @version 10/1/15
@@ -12,8 +11,8 @@ public class DoctorWho
         drawTardis(2, 1);
         drawTardis(1, 3);
     }
-    public static void drawTardis(int windowHeight, int windowRowsAfterFirst){
-        //it's windowrowsafterfirst because first is different/necessary
+    public static void drawTardis(int segmentHeight, int segmentRowsAfterFirst){
+        //it's segmentrowsafterfirst because first is different/necessary
         drawSpaces(9);
         System.out.println("-");
         drawSpaces(8);
@@ -24,24 +23,24 @@ public class DoctorWho
         System.out.println("||  POLICE  BOX  ||");
         drawSingleLineAcross();
         //top of tardis is unique, can't simplify besides spaces
-        drawWindowTop();
-        for (int i=1; i<=windowHeight; i++){
-            //number of rows in window depends on the parameter windowHeight
+        drawSegmentTop();
+        for (int i=1; i<=segmentHeight; i++){
+            //number of rows in segment depends on the parameter segmentHeight
             for (int j=1; j<=9; j++){
                 System.out.print(" |");
-                //paned windows have repeated pattern all the way across
+                //paned window segment has repeated pattern all the way across
             }
             System.out.println();
         }
-        drawWindowBottom();
-        for (int i=1; i<=windowRowsAfterFirst; i++){
-            //total number of windows after first depends on parameter windowRowsAfterFirst
-            drawWindowTop();
-            for (int j=1; j<=windowHeight; j++){
-                //middle rows of window repeated as many times as it is supposed to be tall
-                drawWindowMiddle();
+        drawSegmentBottom();
+        for (int i=1; i<=segmentRowsAfterFirst; i++){
+            //total number of segments after first depends on parameter segmentRowsAfterFirst
+            drawSegmentTop();
+            for (int j=1; j<=segmentHeight; j++){
+                //middle rows of segment repeated as many times as it is supposed to be tall
+                drawSegmentMiddle();
             }
-            drawWindowBottom();
+            drawSegmentBottom();
         }
         for (int i=1; i<=19; i++){
             System.out.print("=");
@@ -62,26 +61,26 @@ public class DoctorWho
         //for loop to draw lines in top portion, just repeated -
         System.out.println();
     }
-    public static void drawWindowTop(){
+    public static void drawSegmentTop(){
         System.out.print(" |");
         for (int i=1; i<=2; i++){
             System.out.print(" _____ |");
         }
-        //pattern for top of window repeated
+        //pattern for top of segment repeated
         System.out.println();
     }
-    public static void drawWindowBottom(){
+    public static void drawSegmentBottom(){
         for (int i=1; i<=2; i++){
             System.out.print(" | -----");
         }
-        //bottom of window also has repeatable pattern
+        //bottom of segment also has repeatable pattern
         System.out.println(" |");
     }
-    public static void drawWindowMiddle(){
+    public static void drawSegmentMiddle(){
         for (int i=1; i<=2; i++){
             System.out.print(" | |   |");
         }
         System.out.println(" |");
-        //middle of windows has repeated parts
+        //middle of segment has repeated parts
     }
 }
